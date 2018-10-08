@@ -1,0 +1,46 @@
+{
+  "name": "notulite-front-server",
+  "version": "0.0.1",
+  "description": "Notulite landing page rendered with express and handlebars",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js",
+    "babel-build": "babel src --out-dir dist",
+    "build": "webpack --mode production",
+    "serve": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PT. Bahasa Kita",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "jquery.easing": "^1.4.1",
+    "node-fetch": "^2.2.0",
+    "url-loader": "^1.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "regenerator-runtime": "^0.12.1",
+    "script-ext-html-webpack-plugin": "^2.0.1",
+    "style-loader": "^0.23.0",
+    "superagent": "^4.0.0-beta.5",
+    "supertest": "^3.3.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
