@@ -1,11 +1,12 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import Dotenv from 'dotenv-webpack';
 
 export default {
     entry: {
-        static: path.join(__dirname, './static.js'),
-        main: path.join(__dirname, './src/main.js')
+        main: path.join(__dirname, '/src/main.js')
     },
     output: {
         path: path.join(__dirname, 'dist'),
@@ -31,6 +32,15 @@ export default {
     },
     stats: {
         colors: true
+    },
+    plugins: [
+        new Dotenv(),
+        new CopyWebpackPlugin([
+            {from : 'dist', to: '../public/js'}
+        ])
+    ],
+    node: {
+        fs: 'empty'
     },
     devtool: 'source-map'
 };
