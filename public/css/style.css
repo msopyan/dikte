@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf");
+  font-family: 'Polar';
+  font-weight: normal;
+  font-style: normal;
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -59,7 +68,7 @@ p {
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Work Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 40;
   margin: 0 0 20px 0;
 }
 
@@ -79,7 +88,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   margin: 0;
   padding: 0;
@@ -93,7 +102,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-nav #fh5co-logo {
-  font-size: 24px;
+  font-size: 30px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -216,6 +225,11 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.active > a {
   color: #fff !important;
 }
+
+/* slide =========== */
+
+/* slide end =========== */
+
 
 #fh5co-header,
 #fh5co-counter,
@@ -596,7 +610,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .features .col-half,
 .features .col-half-image-holder {
-  width: 50%;
+  width: auto;
   float: left;
 }
 @media screen and (max-width: 768px) {
@@ -1451,10 +1465,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .inputfile:focus + label,
 .inputfile + label:hover {
   background-color: red;
-}
-
-.upload-icon {
-  font-size: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
