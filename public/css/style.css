@@ -89,11 +89,12 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-nav {
   position: fixed;
+  background: #fff;
   top: 0;
   margin: 0;
   padding: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   z-index: 1001;
 }
 @media screen and (max-width: 768px) {
@@ -108,9 +109,13 @@ h1, h2, h3, h4, h5, h6, figure {
   text-transform: uppercase;
   font-weight: bold;
 }
-.fh5co-nav a {
+.fh5co-nav a#pull {
   padding: 5px 10px;
   color: #f35f55;
+  position: relative;
+  background-color: #fff;
+  display: block;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
