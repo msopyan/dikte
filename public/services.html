@@ -3,7 +3,8 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Service | Voice to Text | Notulite</title>
+	<title>Service | Notulite</title>
+	<link rel="shortcut icon" href="images/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -40,6 +41,25 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	
+	<script>
+		$(function() {
+			var pull 		= $('#pull'); // Variabel tombol navigasi (akan muncul hanya pada perangkat mobile)
+				menu 		= $('nav ul'); // Variabel menu
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 600 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
 	</head>
 	<body>
 		
@@ -47,21 +67,22 @@
 	
 	<div id="page">
 	<div id="top-menu">
-		<nav class="fh5co-nav" role="navigation">
+		<nav class="fh5co-nav " role="navigation">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
 						<div id="fh5co-logo"><a href="index.html">Notulite</a></div>
 					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
+
+					<div class="col-xs-10 text-right menu-1 pull">
+						<ul class="clearfix">
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
 							<li class="has-dropdown">
-								<a href="services.html">Services</a>
+								<a href="#">Services</a>
 								<ul class="dropdown">
-									<li><a href="#">Voice to Text</a></li>
-									<li><a href="#">Text to Voice</a></li>
+									<li><a href="services.html">Voice to Text</a></li>
+									<li><a href="services.html">Text to Voice</a></li>
 									<li><a href="#">API</a></li>
 								</ul>
 							</li>
@@ -73,6 +94,8 @@
 			</div>
 		</nav>
 	</div>
+	
+
 	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);">
 		<div class="overlay"></div>
 		<div class="container">

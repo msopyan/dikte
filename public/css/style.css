@@ -50,13 +50,13 @@ body {
 }
 
 a {
-  color: #0C9CEE;
+  color: #f35f55;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #0C9CEE;
+  color: #f35f55;
   outline: none;
   text-decoration: none;
 }
@@ -74,22 +74,34 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #0C9CEE;
+  background: #f35f55;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #0C9CEE;
+  background: #f35f55;
 }
 
 ::selection {
   color: #fff;
-  background: #0C9CEE;
+  background: #f35f55;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
 }
 
 .fh5co-nav {
   position: fixed;
-  background: #fff;
   top: 0;
   margin: 0;
   padding: 0;
@@ -104,6 +116,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav #fh5co-logo {
   font-size: 30px;
+  color: #f35f55;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -113,7 +126,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 5px 10px;
   color: #f35f55;
   position: relative;
-  background-color: #fff;
+  background-color: #000000;
   display: block;
   width: 100%;
 }
@@ -203,7 +216,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a {
-  color: #0C9CEE;
+  color: #f35f55;
 }
 .fh5co-nav ul li.btn-cta a span {
   background: #f35f55;
@@ -438,7 +451,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #0C9CEE;
+  color: #f35f55;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -457,7 +470,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #0C9CEE;
+  color: #f35f55;
   position: absolute;
   left: 0;
   top: 0.05em;
@@ -713,7 +726,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .feature-center .icon i {
   font-size: 60px;
-  color: #0C9CEE;
+  color: #f35f55;
 }
 .feature-center .icon2 {
   float: left;
@@ -918,7 +931,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 #fh5co-started {
-  background: #0c9cee;
+  background: #f35f55;
 }
 #fh5co-started .fh5co-heading h2 {
   color: #fff;
@@ -1181,11 +1194,11 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: all 0.2s ease-out;
 }
 .fh5co-nav-toggle.fh5co-nav-white > i {
-  color: #fff;
-  background: #fff;
+  color: #f35f55;
+  background: #f35f55;
 }
 .fh5co-nav-toggle.fh5co-nav-white > i::before, .fh5co-nav-toggle.fh5co-nav-white > i::after {
-  background: #fff;
+  background: #f35f55;
 }
 
 .fh5co-nav-toggle i::before {
@@ -1273,9 +1286,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #0C9CEE;
+  background: #f35f55;
   color: #fff;
-  border: 2px solid #0C9CEE;
+  border: 2px solid #f35f55;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #20a7f4 !important;
@@ -1283,11 +1296,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #0C9CEE;
-  border: 2px solid #0C9CEE;
+  color: #f35f55;
+  border: 2px solid #f35f55;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #0C9CEE;
+  background: #f35f55;
   color: #fff;
 }
 
@@ -1417,7 +1430,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #0C9CEE;
+  border-color: #f35f55;
 }
 
 .row-pb-md {
