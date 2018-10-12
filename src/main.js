@@ -6,3 +6,5 @@ import {
 import {
     registration
 } from './register';
+
+window.registration = registration;

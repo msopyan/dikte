@@ -36,7 +36,7 @@ export default {
     plugins: [
         new Dotenv(),
         new CopyWebpackPlugin([
-            {from : 'dist', to: '../public/js'}
+            {from : 'dist', to: '../public/js', force: true}
         ])
     ],
     node: {
