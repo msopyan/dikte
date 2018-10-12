@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf");
+  font-family: 'Polar';
+  font-weight: normal;
+  font-style: normal;
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -41,13 +50,13 @@ body {
 }
 
 a {
-  color: #0C9CEE;
+  color: #f35f55;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #0C9CEE;
+  color: #f35f55;
   outline: none;
   text-decoration: none;
 }
@@ -59,32 +68,45 @@ p {
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Work Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 40;
   margin: 0 0 20px 0;
 }
 
 ::-webkit-selection {
   color: #fff;
-  background: #0C9CEE;
+  background: #f35f55;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #0C9CEE;
+  background: #f35f55;
 }
 
 ::selection {
   color: #fff;
-  background: #0C9CEE;
+  background: #f35f55;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
 }
 
 .fh5co-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   margin: 0;
   padding: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   z-index: 1001;
 }
 @media screen and (max-width: 768px) {
@@ -93,15 +115,20 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-nav #fh5co-logo {
-  font-size: 24px;
+  font-size: 30px;
+  color: #f35f55;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: bold;
 }
-.fh5co-nav a {
+.fh5co-nav a#pull {
   padding: 5px 10px;
-  color: #fff;
+  color: #f35f55;
+  position: relative;
+  background-color: #000000;
+  display: block;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
@@ -121,7 +148,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li a {
   font-size: 16px;
   padding: 30px 10px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #f35f55;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -189,7 +216,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a {
-  color: #0C9CEE;
+  color: #f35f55;
 }
 .fh5co-nav ul li.btn-cta a span {
   background: #f35f55;
@@ -216,6 +243,11 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.active > a {
   color: #fff !important;
 }
+
+/* slide =========== */
+
+/* slide end =========== */
+
 
 #fh5co-header,
 #fh5co-counter,
@@ -419,7 +451,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #0C9CEE;
+  color: #f35f55;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -438,7 +470,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #0C9CEE;
+  color: #f35f55;
   position: absolute;
   left: 0;
   top: 0.05em;
@@ -511,7 +543,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
-  padding: 15px 30px;
+  padding: 15px 80px;
   background: #f35f55;
   color: #fff;
   border: none !important;
@@ -596,7 +628,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .features .col-half,
 .features .col-half-image-holder {
-  width: 50%;
+  width: auto;
   float: left;
 }
 @media screen and (max-width: 768px) {
@@ -694,7 +726,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .feature-center .icon i {
   font-size: 60px;
-  color: #0C9CEE;
+  color: #f35f55;
 }
 .feature-center .icon2 {
   float: left;
@@ -899,7 +931,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 #fh5co-started {
-  background: #0c9cee;
+  background: #f35f55;
 }
 #fh5co-started .fh5co-heading h2 {
   color: #fff;
@@ -1162,11 +1194,11 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: all 0.2s ease-out;
 }
 .fh5co-nav-toggle.fh5co-nav-white > i {
-  color: #fff;
-  background: #fff;
+  color: #f35f55;
+  background: #f35f55;
 }
 .fh5co-nav-toggle.fh5co-nav-white > i::before, .fh5co-nav-toggle.fh5co-nav-white > i::after {
-  background: #fff;
+  background: #f35f55;
 }
 
 .fh5co-nav-toggle i::before {
@@ -1254,9 +1286,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #0C9CEE;
+  background: #f35f55;
   color: #fff;
-  border: 2px solid #0C9CEE;
+  border: 2px solid #f35f55;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #20a7f4 !important;
@@ -1264,11 +1296,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #0C9CEE;
-  border: 2px solid #0C9CEE;
+  color: #f35f55;
+  border: 2px solid #f35f55;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #0C9CEE;
+  background: #f35f55;
   color: #fff;
 }
 
@@ -1398,7 +1430,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #0C9CEE;
+  border-color: #f35f55;
 }
 
 .row-pb-md {
@@ -1451,10 +1483,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .inputfile:focus + label,
 .inputfile + label:hover {
   background-color: red;
-}
-
-.upload-icon {
-  font-size: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
